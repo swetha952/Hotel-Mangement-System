@@ -1,38 +1,40 @@
 🌌 Celestial Oasis Inn – Hotel Booking System
-A robust hotel management solution built with Python and MySQL to simplify and automate day-to-day operations at hotels.
-This system provides functionalities for booking rooms, calculating bills, managing food orders, scheduling activities, and generating final invoices — all through an intuitive command-line interface.
+A robust hotel management solution built with Python and MySQL to simplify and automate day-to-day hotel operations.
+This system offers seamless functionalities for room bookings, bill calculations, food orders, activity scheduling, and final invoice generation — all accessible through an intuitive command-line interface.
 
 📖 Table of Contents
-Features
-
-Tech Stack
-
-Usage
-
-Output
-
-Future Enhancements
-
-Contributors
-
-References
-
 ✨ Features
-Booking Details: Register new customers with unique IDs and booking duration.
-
-Booking Records: Retrieve and view customer and booking details.
-
-Room Reservation: Choose from Single, Deluxe Double, or Presidential Suite with availability checks.
-
-Food Orders: Add vegetarian or non-vegetarian meal plans per guest.
-
-Activity Scheduling: Book activities such as city tours, water sports, gym sessions, spa, and arcade games.
-
-Automated Billing: Generate a consolidated bill including room rent, food, and activities.
-
-Database Integration: Store all bookings, food orders, and bills with MySQL.
 
 🛠️ Tech Stack
+
+🚀 Usage
+
+📷 Output (Sample)
+
+🔮 Future Enhancements
+
+👥 Contributors
+
+📚 References
+
+✨ Features
+Booking Details: Register new customers with unique IDs and specify booking durations.
+
+Booking Records: Retrieve and view comprehensive customer and booking information.
+
+Room Reservation: Select from Single, Deluxe Double, or Presidential Suite with real-time availability checks.
+
+Food Orders: Manage vegetarian and non-vegetarian meal plans customized per guest.
+
+Activity Scheduling: Book activities including city tours, water sports, gym sessions, spa treatments, and arcade games.
+
+Automated Billing: Generate consolidated bills with detailed breakdowns for room rent, food, and activities.
+
+Database Integration: Efficiently store all bookings, orders, and billing data with MySQL backend.
+
+🛠️ Tech Stack
+Languages & Tools:
+
 Python 3.x
 
 MySQL
@@ -41,49 +43,50 @@ mysql-connector-python
 
 Hardware Requirements:
 
-Computer with minimum 1GB RAM
+Minimum 1GB RAM
 
-Standard Monitor, Keyboard, Mouse
+Standard monitor, keyboard, and mouse
 
 🚀 Usage
 Run the Program
 
-Launch using Python.
+Launch the application using Python.
 
-Main Menu
+Main Menu Interface
 
-You’ll see an interactive menu.
+Access an interactive menu for navigation.
 
-Follow the menu to interact with the system.
+Follow prompts to perform booking, order management, and billing operations.
 
 📷 Output (Sample)
-Display of booking entry confirmation.
+Confirmation messages for booking entries
 
-Food and activity cost calculation.
+Calculation results for food and activity costs
 
-Room availability checks.
+Live room availability status
 
-Final detailed bill with breakdown.
+Detailed final bill with cost breakdown
 
-Error handling for invalid inputs.
+Input validation and error notifications
 
 🔮 Future Enhancements
-Cancellation & Refund Module: Allow customers to cancel bookings with dynamic refund rules.
+Cancellation & Refund Module: Enable customers to cancel and receive dynamic refunds.
 
-Email/SMS Notifications: Send automated booking and cancellation alerts.
+Email/SMS Notifications: Automated alerts for booking confirmations and cancellations.
 
-Waitlist Management: Auto-fill canceled rooms with waitlisted customers.
+Waitlist Management: Automatically reassign canceled rooms to waitlisted customers.
 
-Analytics Dashboard: Insights into booking and cancellation trends.
+Analytics Dashboard: Visual insights into booking trends and customer behavior.
 
 👥 Contributors
-Project developed as part of academic coursework.
+Project developed as an academic initiative
 
-Guided by: Smt. Indrani Haridasan
+Guided by Smt. Indrani Haridasan
 
-Special thanks to teachers and peers for support.
+Special thanks to educators and peers for their invaluable support
 
 📚 References
 Sumita Arora – Class XII
 
 NCERT Computer Science Textbook
+
