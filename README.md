@@ -87,9 +87,3 @@ Special thanks to teachers and peers for support.
 Sumita Arora – Class XII
 
 NCERT Computer Science Textbook
-
-- *Sumita Arora – Class XII*  
-- *NCERT Computer Science Textbook*  
-
----
-
