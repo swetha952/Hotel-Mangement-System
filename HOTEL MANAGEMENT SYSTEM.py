@@ -1,8 +1,29 @@
-
+import os
+from dotenv import load_dotenv
 import mysql.connector as m
 import random
 
-con = m.connect(user='root', password='bvm', database='hm', host='localhost')
+dotenv_path = dotenv_path = "C:\\Users\\sweth\\OneDrive\\github\\.env"
+
+if os.path.exists(dotenv_path):
+    print("✅ Found .enq file!")
+    load_dotenv(dotenv_path)
+else:
+    print("❌ .env file not found at", dotenv_path)
+    
+print("DB_HOST:", os.getenv("DB_HOST"))
+print("DB_USER:", os.getenv("DB_USER"))
+print("DB_PASS:", os.getenv("DB_PASS"))
+print("DB_NAME:", os.getenv("DB_NAME"))
+
+d = m.connect(
+    host=os.getenv("DB_HOST"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASS"),
+    database=os.getenv("DB_NAME")
+)
+cur = d.cursor()
+
 print('''         CELESTIAL OASIS INN
             HOTEL BOOKING         ''')
 menu = '''          1.Enter booking details
@@ -438,3 +459,4 @@ while True:
     except ValueError:
         print("Please enter a valid integer choice.")
         print(menu)
+
