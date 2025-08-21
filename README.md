@@ -12,13 +12,21 @@ Contributors
 ---------------------------------------------------------------------
 ✨ Features
 Booking Details: Register new customers with unique IDs and booking duration.
+
 Booking Records: Retrieve and view customer and booking details.
+
 Room Reservation: Choose from Single, Deluxe Double, or Presidential Suite with automatic availability checks.
+
 Food Orders: Add vegetarian or non-vegetarian meal plans per guest.
+
 Activity Scheduling: Book activities such as city tours, water sports, gym sessions, spa, and arcade games.
+
 Automated Billing: Generate consolidated bills including room rent, meals, and activities.
+
 MySQL Integration: Fast and reliable backend for bookings, orders, and invoices.
+
 Secure Credentials: All sensitive info managed through .env (never shared).
+
 Cross-Platform: Runs seamlessly on Windows, macOS, and Linux.
 ---------------------------------------------------------------------
 🛠️ Tech Stack Python 3.x
@@ -49,9 +57,13 @@ Provide a dotenv.example file with placeholder values for others to set up local
 ---------------------------------------------------------------------
 🔮 Future Enhancements
  Cancellation & Refund Module: Support for booking cancellations with refund rules.
+ 
 Email & SMS Notifications: Notify guests of booking confirmations, cancellations, and invoices.
+
 Waitlist Management: Auto-assign canceled rooms to waitlisted customers.
+
 Analytics Dashboard: Graphical insights into bookings, cancellations, and revenues.
+
 Role-Based Access: Separate logins for staff, admin, and management.
 ---------------------------------------------------------------------
 👥 Contributors Project developed for academic and learning purposes.
