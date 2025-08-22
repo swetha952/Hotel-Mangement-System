@@ -11,6 +11,8 @@ Future Enhancements
 Contributors
 ---------------------------------------------------------------------
 ✨ Features
+
+
 Booking Details: Register new customers with unique IDs and booking duration.
 
 Booking Records: Retrieve and view customer and booking details.
@@ -29,7 +31,9 @@ Secure Credentials: All sensitive info managed through .env (never shared).
 
 Cross-Platform: Runs seamlessly on Windows, macOS, and Linux.
 ---------------------------------------------------------------------
-🛠️ Tech Stack Python 3.x
+🛠️ Tech Stack 
+
+Python 3.x
 MySQL
 mysql-connector-python
 python-dotenv (for environment variable management)
@@ -44,18 +48,24 @@ text DB_HOST=localhost DB_USER=your_mysql_user DB_PASS=your_mysql_password DB_NA
 Launch the Application
 bash python "HOTEL MANAGEMENT SYSTEM.py"
 ---------------------------------------------------------------------
- 📷 Output (Sample) Confirmation messages for booking entries.
+ 📷 Output
+ 
+ (Sample) Confirmation messages for booking entries.
 Availability checks for rooms.
 Food and activity order summaries.
 Final consolidated bill with detailed breakdown.
 Error handling for invalid input or missing details.
 ---------------------------------------------------------------------
 🗂️ File Structure 
+
+
 text Hotel-Mangement-System/ ├── .gitignore ├── .env # Private, not committed ├── database_schema.sql # Database schema ├── HOTEL MANAGEMENT SYSTEM.py # Main application code └── README.md # This file 🔒 Security Guidelines .env must always be ignored by Git.
 Never upload real credentials or private configs.
 Provide a dotenv.example file with placeholder values for others to set up locally.
 ---------------------------------------------------------------------
 🔮 Future Enhancements
+
+
  Cancellation & Refund Module: Support for booking cancellations with refund rules.
  
 Email & SMS Notifications: Notify guests of booking confirmations, cancellations, and invoices.
@@ -66,11 +76,15 @@ Analytics Dashboard: Graphical insights into bookings, cancellations, and revenu
 
 Role-Based Access: Separate logins for staff, admin, and management.
 ---------------------------------------------------------------------
-👥 Contributors Project developed for academic and learning purposes.
+👥 Contributors
+
+Project developed for academic and learning purposes.
 Mentor: Smt. Indrani Haridasan
 Thanks to peers, teachers, and the open-source communities for support.
 ---------------------------------------------------------------------
 📚 References
+
+
  Sumita Arora – Class XII
 NCERT Computer Science Textbook
 Official documentation of Python & MySQL.
