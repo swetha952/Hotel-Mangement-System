@@ -39,12 +39,12 @@ l = [0, 0, 0]
 
 
 def is_valid_customer_id(cid):
-    cur = con.cursor()
+    cur = d.cursor()
     cur.execute("SELECT * FROM Customer WHERE Cid = %s", (cid,))
     return cur.fetchone() is not None  # return True if customer exists
 
 def get_booking_dates(cid):
-    cur = con.cursor()
+    cur = d.cursor()
     cur.execute("SELECT BookInDate, CheckOutDate FROM Customer WHERE Cid = %s", (cid,))
     dates = cur.fetchone()
     if dates:
@@ -56,7 +56,7 @@ room_bookings = {}  # Store room choices keyed by customer ID
 def bdetails():
     global l
 
-    cur = con.cursor()
+    cur = d.cursor()
     while True:
                 cid = random.randint(1000, 9999)
                 cur.execute('SELECT * FROM Customer WHERE Cid = %s', (cid,))
@@ -91,7 +91,7 @@ def bdetails():
         'INSERT INTO Customer (Cid, Name, phoneno, Age, BookInDate, CheckOutDate) VALUES (%s, %s, %s, %s, %s, %s)',
         (cid, name, ph, age, bookin, bookot)
     )
-    con.commit()
+    d.commit()
     print("Details entered successfully! Proceeding to room booking.")  ###CHANGED
     roomrent(cid)  ###CHANGED - Direct to room booking after entering details
     return 
@@ -113,7 +113,7 @@ initial_room_count = {'Single': 30
 
 def get_available_rooms(room_type, bookin, bookot):
     """Calculate available rooms for the given type and dates based on existing bookings."""
-    cur = con.cursor()
+    cur = d.cursor()
     
     
     cur.execute("""
@@ -191,14 +191,14 @@ def roomrent(cid):
     cur = con.cursor()
     cur.execute('INSERT INTO RoomBooking (Cid, RoomType, BookInDate, CheckOutDate) VALUES (%s, %s, %s, %s)', 
                 (cid, room_type, bookin, bookot))
-    con.commit()
+    d.commit()
     print(f'Booking successful! {available_rooms - 1} {room_type} rooms left for the selected dates.')
 
     return total_rent
 
 def brecord():
     global l 
-    cur = con.cursor()
+    cur = d.cursor()
     cid = int(input('Enter customer ID: '))
     if not is_valid_customer_id(cid):
         print("Invalid customer ID. Please try again.")
@@ -256,7 +256,7 @@ def foodbill(cid):
     cur = con.cursor()
     cur.execute('INSERT INTO FoodOrder (cid, foodtype, fprice,quantity) VALUES (%s, %s, %s,%s)', 
                 (cid,ftype,fc,qty))
-    con.commit()
+    d.commit()
     num_days = calculate_days(str(bookin), str(bookot))
     if num_days is None:
         return
@@ -338,7 +338,7 @@ def activities(cid):
         cur = con.cursor()
         cur.execute('INSERT INTO ActivityBooking (Cid, BookingDate, activity, actcost) VALUES (%s, %s, %s, %s)', 
                 (cid, bookin, act, price))
-        con.commit()
+        d.commit()
 
 def totalbill(cid):
     global food_chosen
@@ -360,7 +360,7 @@ def totalbill(cid):
         return
     
     #fetching room details
-    cur = con.cursor()
+    cur = d.cursor()
     cur.execute("SELECT RoomType FROM RoomBooking WHERE Cid = %s", (cid,))
     room_result = cur.fetchone()
     if room_result:
@@ -382,7 +382,7 @@ def totalbill(cid):
 
     total_bill=sum(l)
     cur.execute("INSERT INTO Bill (Cid, TotalBill) VALUES (%s, %s)", (cid, total_bill))
-    con.commit()
+    d.commit()
 
     cur.execute("SELECT TotalBill FROM Bill WHERE Cid = %s", (cid,))  
     t_bill = cur.fetchone()  
@@ -459,4 +459,5 @@ while True:
     except ValueError:
         print("Please enter a valid integer choice.")
         print(menu)
+
 
