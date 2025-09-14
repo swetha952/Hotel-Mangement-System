@@ -1,5 +1,3 @@
-Absolutely! Here is your README for **Celestial Oasis Inn – Hotel Booking System** with every section clearly separated by horizontal lines (`---`), matching the beauty and **structure of the Propertease README**.  
-**Copy-paste this directly:**
 
 ***
 
